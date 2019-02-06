@@ -4,7 +4,9 @@
   "description": "A CSS Animation Studio (Work in Progress)",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build:prod": "cross-env NODE_ENV=production webpack -p --config webpack/client.prod.js --progress",
+    "build:dev:watch": "cross-env NODE_ENV=development webpack-dev-server --config webpack/client.dev.js --content-base public --inline --hot",
+    "lint": "eslint --ext .jsx,.js ./"
   },
   "repository": {
     "type": "git",
@@ -16,5 +18,42 @@
   "bugs": {
     "url": "https://github.com/appcypher/kinema/issues"
   },
-  "homepage": "https://github.com/appcypher/kinema#readme"
+  "homepage": "https://github.com/appcypher/kinema#readme",
+  "dependencies": {
+    "cross-env": "^5.2.0",
+    "css-loader": "^2.1.0",
+    "file-loader": "^3.0.1",
+    "react": "^16.8.0",
+    "react-dom": "^16.8.0",
+    "react-redux": "^6.0.0",
+    "react-router": "^4.3.1",
+    "react-router-dom": "^4.3.1",
+    "redux": "^4.0.1",
+    "redux-thunk": "^2.3.0",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "svg-inline-loader": "^0.8.0",
+    "svg-url-loader": "^2.3.2",
+    "uglifyjs-webpack-plugin": "^2.1.1",
+    "url-loader": "^1.1.2",
+    "webpack": "^4.29.2"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-eslint": "^10.0.1",
+    "babel-loader": "^7.1.5",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-1": "^6.24.1",
+    "eslint": "^5.13.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-jsx-a11y": "^6.2.1",
+    "eslint-plugin-react": "^7.12.4",
+    "node-sass": "^4.11.0",
+    "react-hot-loader": "^4.6.5",
+    "webpack-cli": "^3.2.3",
+    "webpack-dev-server": "^3.1.14"
+  }
 }

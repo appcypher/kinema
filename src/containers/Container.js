@@ -1,11 +1,11 @@
 import React from 'react';
 
 /**
- * Component.
+ * Container.
  * @return{React.Component}
  */
-const Component = () => (
+const Container = () => (
   <div> Hello there! </div>
 );
 
-export default Component;
+export default Container;
