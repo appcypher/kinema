@@ -4,8 +4,8 @@ import React from 'react';
  * Container.
  * @return{React.Component}
  */
-const Container = () => (
-  <div> Hello there! </div>
+const Studio = () => (
+  <div> This is the studio! </div>
 );
 
-export default Container;
+export default Studio;

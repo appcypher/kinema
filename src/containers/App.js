@@ -1,6 +1,6 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
-import Container from './Container';
+import Container from './Studio';
 // Bring in my custom sass stylesheets
 import '../assets/scss/custom.scss';
 
