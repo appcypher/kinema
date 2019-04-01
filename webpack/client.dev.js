@@ -16,7 +16,7 @@ module.exports = {
     publicPath: '/public', // directory where dev-server looks at for bundle
   },
   devServer: {
-    contentBase: path.join(__dirname, '../'),
+    contentBase: path.join(__dirname, '../src'),
     compress: true,
     port: 9000,
   },

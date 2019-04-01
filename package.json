@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build:prod": "cross-env NODE_ENV=production webpack -p --config webpack/client.prod.js --progress",
-    "build:dev:watch": "cross-env NODE_ENV=development webpack-dev-server --config webpack/client.dev.js --content-base public --inline --hot",
+    "build:dev:watch": "cross-env NODE_ENV=development webpack-dev-server --config webpack/client.dev.js --inline --hot",
     "lint": "eslint --ext .jsx,.js ./"
   },
   "repository": {
