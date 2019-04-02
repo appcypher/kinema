@@ -22,8 +22,10 @@ module.exports = {
   },
   module: {
     rules: [{
-      test: /\.js$/,
+      test: /\.jsx?$/,
       exclude: /node_modules/,
+      resolve: { extensions: [".js", ".jsx"] },
+      enforce: 'pre',
       use: {
         loader: 'babel-loader',
         query: {
