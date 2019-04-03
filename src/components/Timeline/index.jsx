@@ -2,7 +2,7 @@ import React from 'react';
 import './index.scss';
 
 const Timeline = () => (
-  <div className="timeline-container">
+  <div className="timeline">
     Timeline
   </div>
 );

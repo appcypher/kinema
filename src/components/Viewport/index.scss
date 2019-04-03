@@ -1,0 +1,131 @@
+$primary-color: #E5E5E5;
+$darker-primary-color: #353535;
+$darker-primary-color-highlight: #252525;
+$divider-color: #959595;
+$highlight: #550045;
+
+.viewport {
+    height: 60%;
+    position: relative;
+
+    .viewport__bottom {
+        display: flex;
+        align-items: center;
+        position: absolute;
+        bottom: 0px;
+        width: 100%;
+
+        .viewport__bottom__playback {
+            flex: 1 1 auto;
+            margin: 10px;
+            display: flex;
+            justify-content: center;
+
+            .viewport__bottom__playback-controls {
+                border-radius: 50px;
+                height: 50px;
+                width: fit-content;
+                background-color: $darker-primary-color;
+                display: flex;
+                align-items: center;
+
+                &:hover {
+                    background-color:$darker-primary-color-highlight;
+                }
+
+                .viewport__bottom__playback-controls__left {
+                    display: flex;
+                    align-items: center;
+                    cursor: pointer;
+
+                    img {
+                        &.start {
+                            padding: 10px;
+                            height: 30px;
+                            opacity: 0.2;
+                        }
+
+                        &.fast-rewind {
+                            padding: 7.5px 6px 6px  7.5px;
+                            height: 35px;
+                            opacity: 0.2;
+                        }
+
+                        &.play-backward {
+                            padding: 5px;
+                            height: 40px;
+                            opacity: 0.6;
+                        }
+
+                        &:hover {
+                            background-color: $highlight;
+                            border-radius: 50%;
+                            opacity: 0.8;
+                        }
+                    }
+                }
+
+                .viewport__bottom__playback-controls__divider {
+                    display: flex;
+                    align-items: center;
+                    height: 100%;
+                    width: 2px;
+                    background-color: $divider-color;
+                    margin: 0 5px;
+                }
+
+                .viewport__bottom__playback-controls__right {
+                    display: flex;
+                    align-items: center;
+                    cursor: pointer;
+
+                    img {
+                        &.play-forward {
+                            padding: 5px;
+                            height: 40px;
+                            opacity: 0.6;
+                        }
+
+                        &.fast-forward {
+                            padding: 7.5px 6px 6px  7.5px;
+                            height: 35px;
+                            opacity: 0.4;
+                        }
+
+                        &.end {
+                            padding: 10px;
+                            height: 30px;
+                            opacity: 0.2;
+                        }
+
+                        &:hover {
+                            background-color: $highlight;
+                            border-radius: 50%;
+                            opacity: 0.8;
+                        }
+                    }
+                }
+            }
+        }
+
+        .viewport__bottom__code-button {
+            border-radius: 50%;
+            height: 45px;
+            width: 45px;
+            background-color: $darker-primary-color;
+            margin: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+
+            img {
+                height: 15px;
+            }
+
+            &:hover {
+                background-color: black;
+            }
+        }
+    }
+}
