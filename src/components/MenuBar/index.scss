@@ -1,0 +1,86 @@
+$primary-color: #252525;
+$secondary-color: #353535;
+$highlight: #550045;
+$darker-primary-color: #151515;
+$text-color: #D5D5D5;
+
+.menu-bar {
+    min-height: 40px;
+    width: 100%;
+    background-color: $primary-color;
+    flex: 0 1;
+    display: flex;
+    font-family: 'Varela Round';
+    color: $text-color;
+
+    .menu-bar__hambuger-menu {
+        height: 100%;
+        width: 45px;
+        background-color: $darker-primary-color;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+
+        img {
+            width: 15px;
+        }
+
+        &:hover {
+            background-color: black;
+        }
+    }
+
+    .menu-bar__button-menu {
+        height: 100%;
+        margin-left: 305px;
+        width: fit-content;
+        background-color: $secondary-color;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        img {
+            padding: 12.5px 15px;
+            height: 15px;
+            cursor: pointer;
+
+            &:hover {
+                background-color: $highlight;
+                border-radius: 5px;
+            }
+        }
+    }
+
+    .menu-bar__left {
+        flex: 1 1 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .menu-bar__left__project-dropdown {
+            font-size: 0.7rem;
+            width: fit-content;
+            display: flex;
+            align-items: center;
+            padding-left: 15px;
+            cursor: pointer;
+
+            img {
+                height: 3px;
+                padding: 17.5px;
+                padding-left: 5px;
+                padding-right: 15px;
+            }
+
+            &:hover {
+                background-color: black;
+                border-radius: 5px;
+            }
+        }
+
+    }
+}
+
+
