@@ -5,9 +5,7 @@ import ViewManager from '../components/ViewManager';
  * @return{React.Component}
  */
 const Studio = () => (
-  <div>
-    <ViewManager />
-  </div>
+  <ViewManager />
 );
 
 export default Studio;

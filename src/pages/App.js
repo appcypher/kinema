@@ -1,20 +1,20 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import { Switch, Route } from 'react-router-dom';
 import Container from './Studio';
-// Bring in my custom sass stylesheets
-import '../assets/scss/custom.scss';
+// Bring in common stylesheets, that contain stylesheets for the entire app.
+import '../assets/scss/common.scss';
 
 /**
  * Contains the routes for switching between pages
  * @return{React.Component}
  */
 const App = () => (
-  <div>
+  <Fragment>
     <Switch>
       <Route exact path="/" component={Container} />
       <Route exact path="/studio" component={Container} />
     </Switch>
-  </div>
+  </Fragment>
 );
 
 export default App;

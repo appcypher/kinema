@@ -1,0 +1,16 @@
+
+
+.view-manager {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+    .view-manager__middle {
+        display: flex;
+        flex: 1 1 auto;
+
+        .view-manager__middle__left {
+            flex: 1 1 auto;
+        }
+    }
+}

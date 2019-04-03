@@ -7,13 +7,13 @@ import Timeline from '../Timeline';
 import CodeViewer from '../CodeViewer';
 
 const ViewManager = () => (
-  <div className="view-manager-container">
+  <div className="view-manager">
     <MenuBar />
 
-    <div className="middle-content-container">
+    <div className="view-manager__middle">
       <InspectorPanel />
 
-      <div className="viewers-container">
+      <div className="view-manager__middle__left">
         <Viewport />
         <CodeViewer />
       </div>
