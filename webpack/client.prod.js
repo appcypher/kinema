@@ -43,19 +43,10 @@ module.exports = {
       ],
     },
     {
-      test: /\.(ttf|eot|woff|woff2)(\?v=\d+\.\d+\.\d+)?$/,
+      test: /\.(ttf|eot|woff|woff2|svg)(\?v=\d+\.\d+\.\d+)?$/,
       use: [
         {
           loader: 'url-loader',
-          options: {},
-        },
-      ],
-    },
-    {
-      test: /\.(svg)(\?v=\d+\.\d+\.\d+)?$/,
-      use: [
-        {
-          loader: 'svg-url-loader',
           options: {},
         },
       ],
