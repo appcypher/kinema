@@ -1,7 +1,9 @@
 # kinema
 A CSS Animation Studio (Work in Progress)
 
-#### UI
+#### The User Inteface
+Mockup can be found [here](https://www.figma.com/file/ywemwNYU9Mll91LS8zg7p1/kinema?node-id=69%3A219)
+
 ![Kinema](media/images/kinema.png)
 
 #### Installation.
