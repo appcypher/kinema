@@ -2,6 +2,16 @@ $primary-color: #656565;
 
 .code-viewer {
     background-color: $primary-color;
-    height: 40%;
+    height: 35%;
     min-height: 45px;
+    display: flex;
+
+
+    .code-viewer__code-section {
+
+    }
+
+    .code-viewer__divider {
+
+    }
 }

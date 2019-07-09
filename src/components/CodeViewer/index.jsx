@@ -3,7 +3,7 @@ import './index.scss';
 
 const Codeviewer = () => (
   <div className="code-viewer">
-    Codeviewer
+    <>
   </div>
 );
 
